@@ -1,0 +1,20 @@
+{
+  "SUN001": {
+    "baja": 100,
+    "media": 300,
+    "alta": 500,
+    "costo": 4
+  },
+  "SUN002": {
+    "baja": 80,
+    "media": 250,
+    "alta": 450,
+    "costo": 6
+  },
+  "SUN003": {
+    "baja": 120,
+    "media": 350,
+    "alta": 600,
+    "costo": 8
+  }
+}
