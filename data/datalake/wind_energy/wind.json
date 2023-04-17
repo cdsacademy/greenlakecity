@@ -1,20 +1,20 @@
 {
   "WIND001": {
-    "baja": 100,
-    "media": 300,
-    "alta": 500,
-    "costo": 4
+    "leve": 200,
+    "moderado": 600,
+    "fuerte": 900,
+    "costo": 8
   },
   "WIND002": {
-    "baja": 80,
-    "media": 250,
-    "alta": 450,
-    "costo": 6
+    "leve": 100,
+    "moderado": 500,
+    "fuerte": 1000,
+    "costo": 6.5
   },
   "WIND003": {
-    "baja": 120,
-    "media": 350,
-    "alta": 600,
-    "costo": 8
+    "leve": 150,
+    "moderado": 400,
+    "fuerte": 800,
+    "costo": 5
   }
 }
