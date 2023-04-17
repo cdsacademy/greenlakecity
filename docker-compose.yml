@@ -22,8 +22,6 @@ services:
 
   zookeeper:
     image: wurstmeister/zookeeper
-#    ports:
-#      - "2181:2181"
     restart: always
 
   kafka_daily_reporter:
@@ -35,9 +33,20 @@ services:
     environment:
       KAFKA_HOST: kafka
       KAFKA_PORT: 9092
+      START_DATE: 01/04/2030
+      END_DATE: 12/04/2030
     depends_on:
       - kafka
       - zookeeper
+
+  locations_information_system:
+    build:
+      context: ./api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./data/datalake/locations/:/app/data/
+    ports:
+      - "8081:8081"
 
   sun_energy_information_system:
     build:
@@ -56,6 +65,24 @@ services:
       - ./data/datalake/wind_energy/:/app/data/
     ports:
       - "8083:8081"
+
+  water_energy_information_system:
+    build:
+      context: ./api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./data/datalake/water_energy/:/app/data/
+    ports:
+      - "8084:8081"
+
+  geo_energy_information_system:
+    build:
+      context: ./api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./data/datalake/geo_energy/:/app/data/
+    ports:
+      - "8085:8081"
 
 #  kafka_consumer_check:
 #    build:
