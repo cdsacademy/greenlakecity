@@ -3,7 +3,9 @@
     "baja": 100,
     "media": 300,
     "alta": 500,
-    "costo": 4,
+    "coste_generacion": 4,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
 	"penalizacion_industrial": 0.3,
 	"penalizacion_residencial": 0.1,
 	"penalizacion_servicios": 0.2
@@ -12,7 +14,9 @@
     "baja": 80,
     "media": 250,
     "alta": 450,
-    "costo": 6,
+    "coste_generacion": 6,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
 	"penalizacion_industrial": 0.3,
 	"penalizacion_residencial": 0.1,
 	"penalizacion_servicios": 0.2
@@ -21,7 +25,9 @@
     "baja": 120,
     "media": 350,
     "alta": 600,
-    "costo": 8,
+    "coste_generacion": 8,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
 	"penalizacion_industrial": 0.3,
 	"penalizacion_residencial": 0.1,
 	"penalizacion_servicios": 0.2
