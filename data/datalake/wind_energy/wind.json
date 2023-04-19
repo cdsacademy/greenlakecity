@@ -3,18 +3,27 @@
     "leve": 200,
     "moderado": 600,
     "fuerte": 900,
-    "costo": 8
+    "costo": 8,
+	"penalizacion_industrial": 0.2,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1
   },
   "WIND002": {
     "leve": 100,
     "moderado": 500,
     "fuerte": 1000,
-    "costo": 6.5
+    "costo": 6.5,
+	"penalizacion_industrial": 0.2,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1
   },
   "WIND003": {
     "leve": 150,
     "moderado": 400,
     "fuerte": 800,
-    "costo": 5
+    "costo": 5,
+	"penalizacion_industrial": 0.2,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1
   }
 }

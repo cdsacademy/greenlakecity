@@ -3,18 +3,27 @@
     "baja": 100,
     "media": 300,
     "alta": 500,
-    "costo": 4
+    "costo": 4,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.1,
+	"penalizacion_servicios": 0.2
   },
   "SUN002": {
     "baja": 80,
     "media": 250,
     "alta": 450,
-    "costo": 6
+    "costo": 6,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.1,
+	"penalizacion_servicios": 0.2
   },
   "SUN003": {
     "baja": 120,
     "media": 350,
     "alta": 600,
-    "costo": 8
+    "costo": 8,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.1,
+	"penalizacion_servicios": 0.2
   }
 }

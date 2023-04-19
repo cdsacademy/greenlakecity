@@ -3,12 +3,18 @@
     "baja": 500,
     "media": 1000,
     "alta": 1500,
-    "costo": 10
+    "costo": 10,
+	"penalizacion_industrial": 0.1,
+	"penalizacion_residencial": 0.3,
+	"penalizacion_servicios": 0.1
   },
   "GEO002": {
     "baja": 400,
     "media": 800,
     "alta": 1200,
-    "costo": 8
+    "costo": 8,
+	"penalizacion_industrial": 0.1,
+	"penalizacion_residencial": 0.3,
+	"penalizacion_servicios": 0.1
   }
 }

@@ -3,12 +3,28 @@
     "bajo": 1000,
     "medio": 2000,
     "alto": 3000,
-    "costo": 5
+    "costo": 5,
+	"penalizacion_industrial": 0.4,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1,
+	"capacidad_total": 3162,
+	"superficie": 24527,
+	"altura": 13,
+	"nivel_inicial": 2845
   },
   "WAT002": {
     "bajo": 800,
     "medio": 1600,
     "alto": 2400,
-    "costo": 3
+    "costo": 3,
+	"penalizacion_industrial": 0.4,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1,
+	"capacidad_total": 2615,
+	"superficie": 19863,
+	"altura": 16,
+	"nivel_inicial": 2205
   }
 }
+
+
