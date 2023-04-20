@@ -1,8 +1,6 @@
 {
   "WAT001": {
-    "bajo": 1000,
-    "medio": 2000,
-    "alto": 3000,
+    "ratio": 0.20,
     "coste_generacion": 5,
 	"coste_transporte": 0.25,
 	"emisiones": 0,
@@ -15,9 +13,7 @@
 	"nivel_inicial": 2845
   },
   "WAT002": {
-    "bajo": 800,
-    "medio": 1600,
-    "alto": 2400,
+	"ratio": 0.18,
     "coste_generacion": 3,
 	"coste_transporte": 0.25,
 	"emisiones": 0,
