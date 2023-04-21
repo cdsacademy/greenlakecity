@@ -35,6 +35,7 @@ services:
       KAFKA_PORT: 9092
       START_DATE: 01/04/2030
       END_DATE: 12/04/2030
+      DAY_SIMULATION_INTERVAL_SECONDS: 1
     depends_on:
       - kafka
       - zookeeper
@@ -83,6 +84,15 @@ services:
       - ./data/datalake/geo_energy/:/app/data/
     ports:
       - "8085:8081"
+
+  coal_energy_information_system:
+    build:
+      context: ./api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./data/datalake/coal_energy/:/app/data/
+    ports:
+      - "8086:8081"
 
 #  kafka_consumer_check:
 #    build:
