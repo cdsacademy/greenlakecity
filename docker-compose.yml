@@ -34,7 +34,7 @@ services:
       KAFKA_HOST: kafka
       KAFKA_PORT: 9092
       START_DATE: 01/01/2030
-      END_DATE: 31/01/2030
+      END_DATE: 31/12/2030
       DAY_SIMULATION_INTERVAL_SECONDS: 1
     depends_on:
       - kafka
