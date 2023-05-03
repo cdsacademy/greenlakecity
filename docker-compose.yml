@@ -24,6 +24,17 @@ services:
     image: wurstmeister/zookeeper
     restart: always
 
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    restart: "no"
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: "kafka:9092"
+      JVM_OPTS: "-Xms16M -Xmx48M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
+    depends_on:
+      - "kafka"
+
   kafka_daily_reporter:
     build:
       context: ./kafka_daily_reporter
@@ -34,7 +45,7 @@ services:
       KAFKA_HOST: kafka
       KAFKA_PORT: 9092
       START_DATE: 01/01/2030
-      END_DATE: 31/01/2030
+      END_DATE: 31/12/2030
       DAY_SIMULATION_INTERVAL_SECONDS: 1
     depends_on:
       - kafka
